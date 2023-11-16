@@ -10,7 +10,15 @@ Lengkapi fungsi myProfile di bawah ini dengan membuat variabel dengan ketentuan 
 Dan Cetak setiap variabel ke layar saat variable myProfile di panggil
  */
 fun myProfile() {
+    val namadepan: String = "Fauzan"
+    val namabelakang: String ="Zidni"
+    val umur: Int = 20
+    val status: Boolean = true
 
+    println("Nama Depan: $namadepan")
+    println("Nama Belakang: $namabelakang")
+    println("Umur: $umur Tahun")
+    println("Status: ${if (status) "Tidak Berpacaran" else "Berpacaran"}")
 }
 
 
@@ -18,7 +26,11 @@ fun myProfile() {
  *  Latihan 2
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
-fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
+fun groupDetail(namagrup: String, namaanggota: List<Any>, sesi: String, kelas: String): Any {
+    println("Nama Kelompok: $namagrup")
+    println("Nama Anggota: $namaanggota")
+    println("Sesi: $sesi")
+    println("Kelas: $kelas")
     return ""
 }
 
@@ -29,8 +41,10 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
  *
  */
 fun myTeam(): List<Any> {
-
-    return listOf()
+    val anggotagrup = listOf("Gatot","Fauzan Zidni","Anis","M.Raihan","Vito","Della","Eka","Hamda","Ichsan","Hafizh")
+    val namasaya = anggotagrup[1]
+    println("Nama Saya: $namasaya")
+    return anggotagrup
 }
 
 /**
@@ -41,10 +55,11 @@ fun myTeam(): List<Any> {
  *
  */
 fun totalMember(): Int {
-    val mentor = arrayOf<String>()
-    val countOfGroup = arrayOf<String>()
+    val mentors = arrayOf("Kak Raihan","Kak Fateh")
+    val groupMembers = arrayOf("Gatot","Fauzan Zidni","Anis","M.Raihan","Vito","Della","Eka","Hamda","Ichsan","Hafizh")
 
-    return 0
+    val total = mentors.size + groupMembers.size
+    return total
 }
 
 fun main() {
@@ -52,7 +67,7 @@ fun main() {
     myProfile()
 
     val myTeam = myTeam()
-    println("My team is: $myTeam")
+    println("Nama Anggota : $myTeam")
 
     val totalMember = totalMember()
     println("Total Member group : $totalMember")
@@ -62,6 +77,6 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("", listOf(), "")
+    groupDetail("Shelter Nerd ", listOf("Fauzan Zidni","Gatot Triantono","Anis Saputri","M.Raihan AryaDevin","Muhammada Vito"), "Pagi","A",)
 
 }

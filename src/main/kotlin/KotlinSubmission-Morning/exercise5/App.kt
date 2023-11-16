@@ -1,13 +1,16 @@
 package id.infinitelearning.KotlinSubmission.exercise5
 
+import sun.java2d.cmm.Profile
+
 fun main() {
+
 
     /**
      * Latihan 1
      * Buat variable dengan nama hero dibawah ini dan isi nilai variable tersebut dengan class Hero
      *
      */
-
+    val hero = Hero()
 
     /**
      * Latihan 2
@@ -15,16 +18,14 @@ fun main() {
      * Dan isi argumen-argumen / data dari parameter sesuai data diri Anda (Name, Age, Height)
      *
      */
-
-
+    hero.setProfile("Fauzan Zidni",20,174)
 
     /**
      * Latihan 3
      * Tampilkan data profile dibawah ini, sebelum melakukan aktivitas
      *
      */
-
-
+    hero.profile()
 
     /**
     Challenge:
@@ -65,15 +66,22 @@ fun main() {
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      *
      */
+    fun ShelterNerd(jalan: Int,lari:Int,makan: Int,minum:Int,lompot:Int,duduk:Int) {
+        repeat(jalan){hero.jalan()}
+        repeat(lari){hero.lari()}
+        repeat(makan){hero.makan()}
+        repeat(minum){hero.minum()}
+        repeat(lompot){hero.lompot()}
+        repeat(duduk){hero.duduk()}
+    }
 
-
+    ShelterNerd(4,1,3,5,5,3)
 
     /**
      * Latihan 5
      * Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas
      *
      */
-
-
+    hero.profile()
 
 }

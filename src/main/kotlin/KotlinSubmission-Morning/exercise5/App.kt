@@ -66,12 +66,12 @@ fun main() {
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      *
      */
-    fun ShelterNerd(jalan: Int,lari:Int,makan: Int,minum:Int,lompot:Int,duduk:Int) {
+    fun ShelterNerd(jalan: Int,lari:Int,makan: Int,minum:Int,lompat:Int,duduk:Int) {
         repeat(jalan){hero.jalan()}
         repeat(lari){hero.lari()}
         repeat(makan){hero.makan()}
         repeat(minum){hero.minum()}
-        repeat(lompot){hero.lompot()}
+        repeat(lompat){hero.lompat()}
         repeat(duduk){hero.duduk()}
     }
 

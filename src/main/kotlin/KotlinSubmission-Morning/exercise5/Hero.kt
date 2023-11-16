@@ -51,24 +51,24 @@ class Hero {
     */
     fun lari () {
         checkHealth()
-        println("$name sedang berjalan 1 kali")
+        println("$name sedang lari 1 kali")
         health -= 2
     }
     fun makan () {
         checkHealth()
-        println("$name sedang berjalan 3 kali")
+        println("$name sedang makan 3 kali")
         health += 2
     }fun minum () {
         checkHealth()
-        println("$name sedang berjalan 5 kali")
+        println("$name sedang minum 5 kali")
         health += 2
-    }fun lompot () {
+    }fun lompat () {
         checkHealth()
-        println("$name sedang berjalan 5 kali")
+        println("$name sedang lompat 5 kali")
         health -= 2
     }fun duduk () {
         checkHealth()
-        println("$name sedang berjalan 3 kali")
+        println("$name sedang duduk 3 kali")
         health += 1
     }
 
